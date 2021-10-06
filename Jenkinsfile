@@ -10,11 +10,12 @@ pipeline {
         }
         stage('Packaging') {
             steps {
-                 {
+
                     script {
                         sh 'HTTP_PROXY=${JENKINS_HTTP_PROXY} \
                         make package'
                     }
-                }
             }
-        }}}
+        }
+        }
+        }
