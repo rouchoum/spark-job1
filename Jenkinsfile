@@ -1,9 +1,9 @@
 node{
-  stage('SCM Checkout){
+  stage('SCM Checkout'){
         git 'https://github.com/rouchoum/spark-job1'
         }
         
-  stage ('Compile-Package){
+  stage ('Compile-Package'){
          sh 'mvn package'
                }
 }
