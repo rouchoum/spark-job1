@@ -1,8 +1,8 @@
 pipeline {
     agent any
     stages{
-    steps{
     stage ('Build') {
+    steps{
     git url: 'https://github.com/rouchoum/spark-job1.git'
     withMaven {
       sh "mvn clean verify"
